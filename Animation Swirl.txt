@@ -1,0 +1,66 @@
+  slider
+useGSAP(() => {
+    gsap.fromTo(
+      SmallImg.current,
+      {
+        x: 0, // Starting position (right side)
+      },
+      {
+        x: -1000, // Ending position (left side)
+        delay: 1,
+        duration: 28,
+        repeat: -1, // Repeat indefinitely
+        yoyo: true, // Reverse the animation after each cycle
+      }
+    );
+
+    gsap.fromTo(
+      SmallImg2.current,
+      {
+        x: -1500, // Starting position (left side)
+      },
+      {
+        x: 0, // Ending position (right side)
+        delay: 1,
+        duration: Small2 ? 0 : 35,
+        repeat: -1, // Repeat indefinitely
+        yoyo: true, // Reverse the animation after each cycle
+        ease: "linear",
+      }
+    );
+  });
+
+  useEffect(() => {
+  
+    
+    if (brandsAnimation && top.current) {
+      // If brandsAnimation is true, create the animation
+      if (!animation.current) {
+        animation.current = window.gsap.fromTo(
+          top.current,
+          { x: 0 },
+          {
+            x: -1000,
+           
+            duration: 20,
+            repeat: -1,
+            yoyo: true,
+          }
+        );
+      }
+    } else if (animation.current) {
+      // If brandsAnimation is false, stop and reset the animation
+  
+      animation.current.kill();
+      window.gsap.set(top.current, { x: 0 });
+      animation.current = null;
+      // animation.current.restart(); 
+    }
+  
+  }, [brandsAnimation]);
+
+  "@gsap/react": "^2.1.1",
+
+   onLoad={() =>                 
+                  setImageSlides(index,"SlideAll1")
+                }

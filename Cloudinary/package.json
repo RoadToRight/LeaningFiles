@@ -1,0 +1,16 @@
+{
+  "name": "cloudinary",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cloudinary": "^2.5.1",
+    "express": "^4.21.2"
+  }
+}
