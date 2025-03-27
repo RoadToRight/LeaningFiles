@@ -1,0 +1,52 @@
+.container{
+    max-width: 1120px;
+    margin: auto;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: blue;
+}
+.ContactParent{
+
+    display: flex;
+    flex-direction: column;
+    padding: 50px 10px;
+    
+    box-sizing: border-box;
+}
+.Buttondiv{
+    
+    display: flex;
+    max-width: 40%;
+    justify-content: space-between;
+}
+.Buttondiv2{
+  
+    display: flex;
+    max-width: 40%;
+    gap: 32px;
+}
+.input{
+    width: 40%;
+    
+    position: relative;
+}
+.Forminput{
+    width: 100%;
+    padding: 13px 20px;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+.label{
+    position: absolute;
+    top: -14px;
+    left: 8px;
+    background-color: #FFFFFF;
+    padding: 3px 10px;
+}
+.textarea{
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid black;
+}

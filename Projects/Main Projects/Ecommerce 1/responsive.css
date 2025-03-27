@@ -1,0 +1,153 @@
+
+
+@media only screen and (max-width:1024px){
+
+   .shoe{
+    height: 55vh;
+   }
+   .landing{
+    padding: 160px 50px;
+   }
+    
+
+}
+
+
+
+@media only screen and (max-width:990px){
+
+    .shoe-div{
+        display: none;
+    }
+
+}
+
+
+@media only screen and (max-width:965px){
+
+   .row2{
+    flex-direction: column;
+   }
+   .Text-button p{
+    /* background-color: chartreuse; */
+    font-size: 1.7vw;
+}
+
+
+}
+@media only screen and (min-width:920px){
+
+
+    .Text-button p{
+     /* background-color: chartreuse; */
+     font-size:1.3vw;
+ }
+ .Text-button-h1{
+    /* background-color: chartreuse; */
+    font-size: 5.6vw;
+}
+.svg-h2{
+    font-size:5.3vw ;
+ }
+ .svg-text p{
+    font-size:1.5vw ;
+ }
+ 
+ 
+ }
+ @media only screen and (max-width:919px){
+
+    
+    .Text-button p{
+     /* background-color: chartreuse; */
+     font-size:2vw;
+ }
+ .Text-button-h1{
+    /* background-color: chartreuse; */
+    font-size: 10vw;
+}
+.svg-h2{
+    font-size:8vw ;
+ }
+ .svg-text p{
+    font-size:2vw ;
+ }
+
+ 
+ }
+  
+ @media only screen and (max-width:450px){
+
+    
+    .Text-button p{
+     /* background-color: chartreuse; */
+     font-size:2.5vw;
+ }
+ .Text-button-h1{
+    /* background-color: chartreuse; */
+    font-size: 12vw;
+}
+.svg-h2{
+    font-size:10vw ;
+ }
+ .svg-text p{
+    font-size:2.2vw ;
+ }
+
+ 
+ }
+
+
+
+
+@media only screen and (max-width:500px){
+
+    .row2{
+     flex-direction: column;
+     justify-content: center;
+     padding-left: 40px;
+    }
+  
+   .Text-button{
+    margin-top: -100px;
+   }
+ 
+ 
+ }
+ @media only screen and (max-width:385px){
+
+    .row2{
+     flex-direction: column;
+     justify-content: center;
+     padding-left: 40px;
+    }
+   
+ 
+ }
+
+   
+@media only screen and (max-width:330px){
+
+    .row2{
+     flex-direction: column;
+    }
+    .card-text button{
+     padding: 15px 50px;
+      
+     
+  }
+  .Text-button p{
+    /* background-color: chartreuse; */
+    font-size:2.7vw;
+}
+.Text-button-h1{
+   /* background-color: chartreuse; */
+   font-size: 13vw;
+}
+
+
+
+
+ 
+ }
+     

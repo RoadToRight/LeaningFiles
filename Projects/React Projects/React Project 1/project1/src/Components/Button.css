@@ -1,0 +1,10 @@
+.btn-parent{
+
+}
+.btn-parent a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 13px;
+    background-color: #d12323;
+    text-align: center;
+}

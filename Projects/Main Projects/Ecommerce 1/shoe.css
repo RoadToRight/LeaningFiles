@@ -1,0 +1,157 @@
+.responsive-img{
+   max-width: 100%;
+    height: auto;
+}
+.CONTAINER{
+    max-width: 1140px;
+    margin: auto;
+}
+
+
+.Shops{
+    display: grid;
+    grid-template-columns: repeat(4,223px);
+    gap: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.item{
+    border-radius: 6px;
+    box-shadow: 3px 4px 12px 1px rgba(0,0,0,0.25);
+}
+.item img{
+    width:100%;
+   
+}
+.price-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.plus-minus-val{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+   
+    padding: 0px 15px;
+}
+.bi-plus-lg , .bi-dash-lg{
+    font-size: 30px;
+    cursor: pointer;
+}
+.value{
+    font-size:20px ;
+}
+.details{
+    padding-left: 15px;
+}
+
+.bi-cart{
+    font-size: 30px;
+    color: white;
+    position: relative;
+}
+.cart-val{
+    position: absolute;
+    color: white;
+    top: -8px;
+    right: -3px;
+    font-size: 15px;
+}
+/* right-slide css work */
+.Addto{
+    width: 100%;
+    padding: 7px 12px;
+    box-shadow: 3px 4px 12px 1px rgba(0,0,0,0.25);
+    background-color: #35171F;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 300ms;
+}
+.Addto:hover{
+    background-color: #E43E8A;
+}
+.bi-cart{
+    color:#ffffff ;
+}
+.cart-val{
+    color:#ffffff ;
+}
+.search-uper-parent{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    
+}
+.search-parent{
+    display: flex;
+}
+.searchbaR{
+    width: 100%;
+}
+.cart-parent{
+    
+    text-align: center;
+}
+
+
+
+
+@media only screen and (max-width:1200px){
+    .CONTAINER{
+        max-width: 970px;
+        margin: auto;
+    }
+    .Shops{
+        grid-template-columns: repeat(3,223px);
+    }
+ }
+ @media only screen and (max-width:1024px){
+    .CONTAINER{
+        max-width: 740px;
+        margin: auto;
+    }
+    .Shops{
+        grid-template-columns: repeat(2,223px);
+    }
+    
+
+ }
+ 
+ @media only screen and (max-width:768px){
+    .CONTAINER{
+        max-width: 500px;
+        margin: auto;
+    }
+    .Shops{
+        grid-template-columns: repeat(2,200px);
+        padding-left: 30px;
+    }
+ }
+ @media only screen and (max-width:568px){
+    .CONTAINER{
+        max-width: 90%;
+        margin: auto;
+    }
+    .Shops{
+        grid-template-columns: repeat(2,150px);
+        padding-left: 5px;
+    }
+ }
+ @media only screen and (max-width:368px){
+    .CONTAINER{
+        max-width: 90%;
+        margin: auto;
+    }
+    .Shops{
+        grid-template-columns: repeat(2,140px);
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+ }
+ 

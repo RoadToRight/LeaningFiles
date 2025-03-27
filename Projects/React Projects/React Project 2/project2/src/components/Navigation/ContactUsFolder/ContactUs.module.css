@@ -1,0 +1,15 @@
+.container{
+    max-width: 1120px;
+    margin: auto;
+}
+.contactHeader h1{
+
+    font-weight: 800;
+    font-size: 48px;
+}
+.contactHeader p{
+
+    font-weight: 400;
+    font-size: 14px;
+    width: 80%;
+}

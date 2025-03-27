@@ -1,0 +1,58 @@
+.parent {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+}
+.imgdiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.DiceGmeBtn {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+.DiceGmeBtn h1 {
+  font-size: 8vw;
+}
+.imgresponsive {
+  max-width: 100%;
+  height: auto;
+}
+
+  
+@media (max-width: 568px) {
+  .parent {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .DiceGmeBtn {
+    margin-top: -150px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 30px;
+    
+  }
+  .DiceGmeBtn h1 {
+    font-size: 15vw;
+  }
+  
+}
+
+@media (max-width: 400px) {
+   
+    .DiceGmeBtn {
+      margin-top: -100px;
+    
+    }
+  
+   
+  }
+  

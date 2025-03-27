@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
+.didact-gothic-regular {
+    font-family: "Didact Gothic", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .tooltip-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip-text {
+    visibility: hidden;
+    width: 100px;
+    background-color: #ffffff;
+    color: #544f4f;
+    text-align: center;
+    border-radius: 4px;
+    padding: 4px 0px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Position above the icon */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 15px;
+    white-space: normal;
+    word-wrap: break-word;
+
+   
+
+  }
+  
+  /* Tooltip arrow */
+  .tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%; /* Arrow at the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Show the tooltip text on hover */
+  .tooltip-container:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+    
+   
+  }
+  
+  @media (max-width:900px) {
+    .tooltip-container:hover .tooltip-text {
+     
+      display: none;
+     
+    }
+  }

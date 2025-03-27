@@ -1,0 +1,30 @@
+.table ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    
+  margin: 0px;
+}
+.table ul li {
+  padding: 12px;
+  border: 1px solid black;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+}
+.productsList{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.productsList button{
+
+  margin-top: 30px;
+
+}
+.search-engine{
+  padding: 13px;
+  margin: 10px;
+}

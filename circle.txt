@@ -1,0 +1,218 @@
+circle
+
+  // useGSAP(() => {
+  //   gsap.from(".imgDiv", {
+  //     x: -300, // Start from 300px left of the element's initial position
+  //     opacity: 0, // Start from 0 opacity
+  //     duration: 1.5, // Adjusted duration for smoother animation
+  //     ease: "power3.out", // Easing function to smooth the transition
+  //     scrollTrigger: {
+  //       trigger: ".imgDiv", // The element to trigger the animation
+  //       start: "top 80%", // Start animation when the top of the element reaches 80% from the top of the viewport
+  //       end: "bottom 80%", // End when the top of the element reaches 80% from the top of the viewport
+  //       scrub: 1, // Smoothly scrub the animation based on scroll position
+  //       markers: false, // Disable markers once you're done debugging
+  //     },
+  //   });
+
+  //   // Animation for the '.textttC' element
+  //   gsap.from(".textttC", {
+  //     x: -300, // Start from 300px left of the element's initial position
+  //     opacity: 0, // Start from 0 opacity
+  //     duration: 1.5, // Adjusted duration for smoother animation
+  //     ease: "power3.out", // Easing function to smooth the transition
+  //     scrollTrigger: {
+  //       trigger: ".imgDiv", // The element to trigger the animation
+  //       start: "top 80%", // Start animation when the top of the element reaches 80% from the top of the viewport
+  //       end: "bottom 80%", // End when the top of the element reaches 80% from the top of the viewport
+  //       scrub: 1, // Smoothly scrub the animation based on scroll position
+  //       markers: false, // Disable markers once you're done debugging
+  //     },
+  //   });
+  // });
+
+
+dark purple
+
+
+ useGSAP(() => {
+    gsap.from(".img", {
+      x: -300, // Start from 200px below the element's initial position
+      opacity: 0, // Start from 0 opacity
+      duration: 1.5, // Duration for the animation
+      ease: "power3.out", // Easing function to smooth the transition
+      scrollTrigger: {
+        trigger: ".img", // The element to trigger the animation
+        start: "top 80%", // Start animation when the top of the element reaches 80% from the top of the viewport
+        end: "bottom 80%", // End when the top of the element reaches 30% from the top of the viewport
+        scrub: 1, // Smoothly scrub the animation based on scroll position
+        // markers: true, // Show scroll trigger markers for debugging (you can remove it once you're done debugging)
+      },
+    });
+    gsap.from(".textttD, .buttondiv", {
+      x: 300, // Start from 200px below the element's initial position
+      opacity: 0, // Start from 0 opacity
+      duration: 1.5, // Duration for the animation
+      ease: "power3.out", // Easing function to smooth the transition
+      scrollTrigger: {
+        trigger: ".img", // The element to trigger the animation
+        start: "top 80%",
+        end: "bottom 80%",
+        scrub: 1, // Smoothly scrub the animation based on scroll position
+        // markers: true, // Show scroll trigger markers for debugging (you can remove it once you're done debugging)
+      },
+    });
+  });
+
+Do you have ques
+
+  useGSAP(() => {
+    gsap.from(qchild.current, {
+      y: 400,  // Start from 200px below the element's initial position
+      opacity: 0,  // Start from 0 opacity
+      duration: 1,  // Duration for the animation
+      ease: 'power3.out',  // Easing function to smooth the transition
+      scrollTrigger: {
+        trigger: q.current,  // The element to trigger the animation
+        start: '-33% 80%',  
+        end: 'top 30%',  
+        scrub: 1,  
+      },
+    });
+  });
+
+useEffect(() => {
+  ScrollTrigger.refresh();
+}, [location])
+
+
+slider
+
+
+  useGSAP(() => {
+    gsap.fromTo(
+      SmallImg.current,
+      {
+        x: 0, // Starting position (right side)
+      },
+      {
+        x: -1000, // Ending position (left side)
+        delay: 1,
+        duration: 28,
+        repeat: -1, // Repeat indefinitely
+        yoyo: true, // Reverse the animation after each cycle
+      }
+    );
+
+    gsap.fromTo(
+      SmallImg2.current,
+      {
+        x: -1500, // Starting position (left side)
+      },
+      {
+        x: 0, // Ending position (right side)
+        delay: 1,
+        duration: Small2 ? 0 : 35,
+        repeat: -1, // Repeat indefinitely
+        yoyo: true, // Reverse the animation after each cycle
+        ease: "linear",
+      }
+    );
+  });
+
+
+quote.jsx
+
+
+  useGSAP(() => {
+    gsap.from('.Quote', {
+      x: -300,  // Start from 200px below the element's initial position
+      opacity: 0,  // Start from 0 opacity
+      duration: 1,  // Duration for the animation
+      ease: 'power3.out',  // Easing function to smooth the transition
+      scrollTrigger: {
+        trigger: '.Quote',  // The element to trigger the animation
+        start: '18% 80%',  // Start animation when the top of the element reaches 80% from the top of the viewport
+        end: 'bottom 30%',    // End when the top of the element reaches 30% from the top of the viewport
+        scrub: 1,  // Smoothly scrub the animation based on scroll position
+        // markers: true,  // Show scroll trigger markers for debugging (you can remove it once you're done debugging)
+      },
+    });
+  });
+
+
+quotes bottom
+
+
+  useGSAP(() => {
+    gsap.from('.Qdiv', {
+      y: 400,  // Start from 200px below the element's initial position
+      opacity: 0,  // Start from 0 opacity
+      duration: 1,  // Duration for the animation
+      ease: 'power3.out',  // Easing function to smooth the transition
+      scrollTrigger: {
+        trigger: '.Qdiv',  // The element to trigger the animation
+        start: '-25% 80%',  // Start animation when the top of the element reaches 80% from the top of the viewport
+        end: 'top 30%',    // End when the top of the element reaches 30% from the top of the viewport
+        scrub: 1,  // Smoothly scrub the animation based on scroll position
+        // markers: true,  // Show scroll trigger markers for debugging (you can remove it once you're done debugging)
+      },
+    });
+  });
+
+resdy
+
+  useGSAP(() => {
+    gsap.from(ready.current, {
+      y: 400,
+      opacity:0,        // Start from 200px below the element's initial position
+      duration: 3,     // Duration for the animation
+      ease: "power3.out", // Easing function to smooth the transition
+      scrollTrigger: {
+        trigger:readyparent.current,    // The element to trigger the animation
+        start: "top 80%",      // Start animation when the top of the element reaches 80% from the top of the viewport
+        end: "bottom 80%",        // End when it reaches 30% from the top of the viewport
+        scrub: 3,           // Smoothly scrub the animation based on scroll position
+        // markers: true,         // Show scroll trigger markers for debugging
+      }
+    });
+  });
+useEffect(() => {
+  ScrollTrigger.refresh();
+}, [location])
+
+three benefits
+ useGSAP(() => {
+      gsap.from(three.current, {
+        x: -300, // Start from 200px below the element's initial position
+        opacity: 0, // Start from 0 opacity
+        duration: 1.5, // Duration for the animation
+        ease: "power3.out", // Easing function to smooth the transition
+        scrollTrigger: {
+          trigger: three.current, 
+          start: "top 80%",
+          end: "bottom 80%", 
+          scrub: 1, 
+        },
+      });
+
+    });
+
+work.jsx
+
+
+useGSAP(() => {
+  gsap.from(work.current,{
+    y:1000,
+    opacity:0,
+    // scrollTrigger:{
+    //   markers:true,
+    //   start:"5% top",
+    //   end:"5% top",
+    //   scrub:2,
+    // }
+  })
+})  
+
+
+"@gsap/react": "^2.1.1",

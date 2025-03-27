@@ -1,0 +1,254 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* .main1{
+    width: 200px;
+    height: 200px;
+    background-color: coral;
+}
+.main2{
+    width: 200px;
+    height: 200px;
+    background-color: darkblue;
+} */
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1% 1%;
+    color:white;
+   
+  
+}
+nav ul{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 2.5vh;
+    margin-top:12px
+    
+}
+.logo{
+    font-size: 2.8vh;
+}
+.hamburger{
+    font-size: 3.5vh;
+}
+.container-fluid{
+    background:linear-gradient(135deg ,rgb(255, 128, 69) , rgb(255, 94, 0),orangered ,rgb(255, 38, 0));
+}
+.page1{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    padding-bottom: 100px;
+}
+.page1 h1{
+    color:white;
+    font-size: 36vh;
+}
+.can1f{
+    position: absolute;
+    width: 27%;
+    height: 70%;
+    z-index: 20;
+}
+.lf{
+    width: 10%;
+    position: absolute;
+    height: 20%;
+}
+.lf1{
+    position: absolute;
+    top:30%;
+    left:17%;
+    transform: rotate(20deg);
+}
+
+.lfr{
+    position: absolute;
+    top:20%;
+    right: 2%;
+    width: 20%;
+    height: 90vh;
+}
+.cleaf{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: 30vh;
+}
+.ocut{
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    width: 15%;
+    height: 30vh;
+   
+}
+
+/* page2
+ */
+
+
+.page2{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2px 30px;
+   
+ }
+ .page2 svg{
+    transform:rotateX(50deg) ;
+ }
+ .page2 .diagram{
+   
+    padding-top: 270px;
+   
+ }
+ /* responsive */
+
+ @media only screen and (max-width:1230px){
+
+    .page1 h1{
+        color:white;
+        font-size: 30vh;
+    }
+    .can1f{
+        position: absolute;
+        width: 27%;
+        height: 70%;
+        z-index: 20;
+    }
+ }
+ @media only screen and (max-width:1024px){
+
+  
+    .can1f{
+       
+        width: 32%;
+        height: 40%;
+        
+    }
+    .lf1{
+       
+        top:33%;
+        left:7%;
+       
+    }
+    .page1 h1{
+        color:white;
+        font-size: 20vh;
+    }
+    .lf1{
+       
+        left:10%;
+       
+    }
+    .ocut{
+        position: absolute;
+        top: 27%;
+        left: 29%;
+        width: 20%;
+        height: 20vh;
+       
+    }
+    nav ul{
+        display: none;
+    }
+ }
+ @media only screen and (max-width:528px){
+
+  
+    .can1f{
+       
+        width: 32%;
+        height: 40%;
+        
+    }
+    .lf1{
+       
+        top:33%;
+        left:7%;
+       
+    }
+    .page1 h1{
+        color:white;
+        font-size: 10vh;
+    }
+    .lf1{
+       
+        left:10%;
+       
+    }
+    .ocut{
+        position: absolute;
+        top: 27%;
+        left: 29%;
+        width: 20%;
+        height: 20vh;
+       
+    }
+    nav ul{
+        display: none;
+    }
+ }
+
+ /* @media only screen and (max-width:960px){
+
+  
+    .can1f{
+       
+        width: 33%;
+        height: 68%;
+        
+    }
+    .lf1{
+        
+        left:10%;
+       
+    }
+    .ocut{
+        position: absolute;
+        top: 20%;
+        left: 29%;
+        width: 20%;
+        
+       
+    }
+ }
+ @media only screen and (max-width:833px){
+
+  
+    .can1f{
+       
+        width: 38%;
+        height: 68%;
+        
+    }
+    .lf1{
+        
+        left:8%;
+       
+    }
+    .ocut{
+        position: absolute;
+        top: 20%;
+        left: 27%;
+        width: 20%;
+        
+       
+    }
+ } */

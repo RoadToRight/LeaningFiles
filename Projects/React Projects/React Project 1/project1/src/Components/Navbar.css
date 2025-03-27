@@ -1,0 +1,63 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1240px;
+    margin: auto;
+    max-height: 100px;
+}
+nav ul{
+ 
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+    font-size: 13px;
+}
+.logo{
+    width:100px ;
+    height: 100px;
+    
+}
+.logo img{
+
+    width: 100%;
+    height: 100%;
+}
+.squarespace-logo{
+    display: none;
+    width: 100px;
+    height: 60px;
+
+}
+.squarespace-logo img{
+
+    width: 100%;
+    height: 100%;
+
+}
+@media (max-width:568px){
+
+    nav ul{
+       flex-direction: column;
+       position: absolute;
+       top: 70px;
+       left: 0;
+       right: 0;
+       text-align: center;
+       background:linear-gradient(135deg , black,#d12323 );
+      gap: 0px;
+      transition: all 300ms ease-out;
+      overflow: hidden;
+      max-height: 0px;
+    }
+    nav ul li{
+       padding:20px;
+       color: aliceblue;
+     }
+     .squarespace-logo{
+        display: block;
+     }
+  
+
+}

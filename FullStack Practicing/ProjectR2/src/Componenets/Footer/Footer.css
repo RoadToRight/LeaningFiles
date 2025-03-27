@@ -1,0 +1,21 @@
+.footer-li{
+    cursor: pointer;
+}
+.footer-li::after{
+
+    content:"";
+    width:0px;
+    height: 2px;
+    display: block;
+    background-color: #fd2031;
+    transition: all 250ms ease-in;
+}
+
+.footer-li:hover::after{
+
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fd2031;
+}

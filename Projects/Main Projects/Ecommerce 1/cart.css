@@ -1,0 +1,76 @@
+.ShoppingCarts{
+    display: grid;
+    grid-template-columns: repeat(1,323px);
+    justify-content: center;
+    align-items: center;
+   
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    gap: 30px;
+}
+.Shop-item{
+    
+    display: flex;
+    box-shadow: 3px 4px 12px 1px rgba(0,0,0,0.25);
+    align-items: start;
+    flex-wrap:wrap ;
+}
+.Product-details{
+    display: flex;
+    gap:20px;
+   
+   padding: 10px 0px;
+}
+.generateCarts-x{
+    cursor: pointer;
+}
+.btn-incre-decre{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+    width: 100%;
+}
+
+.generateCarts-Total{
+
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+   width: 100%;
+}
+.generateCarts-price{
+    background-color: black;
+    color: white;
+    box-shadow: 3px 4px 12px 1px rgba(0,0,0,0.25);
+    padding: 5px;
+    border-radius: 4px;
+}
+.Signal-Total-RemoveItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Signal-Total-RemoveItem button{
+    background-color: #35171F;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+.Signal-Total-RemoveItem button a{
+    color: white;
+    text-decoration: none;
+
+}
+.Parent-Shopping-Final{
+    margin-top: 35px;
+}
+.cart-parent{
+    
+    text-align: center;
+}
+
+

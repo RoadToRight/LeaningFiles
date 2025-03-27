@@ -1,0 +1,157 @@
+nav {
+  width: 100%;
+
+  position: fixed;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  padding: 17px 27px;
+  z-index: 50;
+
+}
+.icons {
+  height: 100%;
+  display: flex;
+  padding-top: 24px;
+  align-items: center;
+  
+}
+.icons a{
+  color: white;
+  text-decoration: none;
+}
+ul {
+  color: white;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 20px;
+}
+ul li {
+  cursor: pointer;
+  font-weight: 490;
+}
+
+ul li::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 2px;
+  background-color: #fd2031;
+  transition: all 250ms ease-in;
+}
+ul li:hover::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #fd2031;
+}
+.Burger {
+  display: none;
+}
+.Cross {
+  display: none;
+}
+.sidenavShow{
+
+  position: fixed;
+  top: 0px;
+  right: 0px;
+ 
+}
+.logout-name{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  text-align: center;
+  
+}
+.logout-name h6{
+  margin-top: 8px;
+}
+
+@media (max-width: 1280px) {
+  ul {
+    gap: 10px;
+    margin-top: 0px;
+  }
+  .logo {
+    width: 260px;
+  }
+  .logo img {
+    width: 100%;
+  }
+  ul li {
+    font-size: 14px;
+  }
+ 
+}
+@media (max-width: 1085px) {
+  
+  .Burger {
+    display: block;
+    margin-top: 10px;
+  }
+  .sidenavNo{
+
+    position: fixed;
+    top: 0px;
+    right: -360px;
+   
+  }
+  ul {
+    margin-top: 0px;
+    flex-direction: column;
+    position: fixed;
+   
+    background: url("/images/cheetapads.webp"), #565656;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    transition: all 300ms ease-in;
+    overflow-x: hidden;
+    width: 360px;
+    gap: 20px;
+  }
+  ul li {
+    font-weight: 650;
+    font-size: 20px;
+  }
+  .Cross {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+}
+@media (max-width: 440px){
+
+ul{
+  width: 100%;
+  
+}
+
+.logo {
+  width: 200px;
+}
+.sidenavNo{
+
+  position: fixed;
+  top: 0px;
+  right: -450px;
+ 
+}
+.Burger{
+  font-size: 26px;
+  font-weight: 1000;
+}
+
+}
